@@ -1,4 +1,3 @@
 export function problem (input) {
-    console.log('Hello Word');
-    
+    console.log('Hello World');    
 }
