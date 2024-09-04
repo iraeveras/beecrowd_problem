@@ -21,10 +21,12 @@ mensagem: “Presentation Error”.
     9                  |
 
 */
-export function problem (lines) {
+export function problem(lines) {
     const [a, b] = lines;
     const prod = a * b;
 
     console.log(`PROD = ${prod}`);
-    
+
+    document.querySelector(".input-resp").innerHTML += `<span>PROD = ${prod}</span>`
+
 }

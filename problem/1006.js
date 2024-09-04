@@ -23,7 +23,7 @@ Assim como todos os problemas, não esqueça de imprimir o fim de linha após o 
     5.0                |
 
 */
-export function problem (lines) {
+export function problem(lines) {
     const [notaA, notaB, notaC] = lines;
     const pesoNotaA = 2;
     const pesoNotaB = 3;
@@ -32,5 +32,6 @@ export function problem (lines) {
 
     const media = (notaA * pesoNotaA + notaB * pesoNotaB + notaC * pesoNotaC) / somaPesos
     console.log(`MEDIA = ${media.toFixed(1)}`);
-    
+
+    document.querySelector(".input-resp").innerHTML += `<span>MEDIA = ${media.toFixed(1)}</span>`
 }

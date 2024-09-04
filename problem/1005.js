@@ -19,14 +19,15 @@ Imprima a mensagem "MEDIA" e a m√©dia do aluno conforme exemplo abaixo, com 5 d√
     10.0               |
 
 */
-export function problem (lines) {
+export function problem(lines) {
     const [notaA, notaB] = lines;
     const pesoNotaA = 3.5;
     const pesoNotaB = 7.5;
     const somaPesos = pesoNotaA + pesoNotaB
-    
+
     const media = ((notaA * pesoNotaA) + (notaB * pesoNotaB)) / somaPesos;
 
     console.log(`MEDIA = ${media.toFixed(5)}`);
-    
+
+    document.querySelector(".input-resp").innerHTML += `<span>MEDIA = ${media.toFixed(5)}</span>`
 }

@@ -19,10 +19,11 @@ Cuide para que tenha um espaço antes e depois do sinal de igualdade, conforme o
     15                 |  X = 8
     -7                 |
 */
-export function problem (lines) {
+export function problem(lines) {
     const A = lines[0]
     const B = lines[1]
 
     const X = Number(A) + Number(B)
     console.log('X = ' + X)
+    document.querySelector(".input-resp").innerHTML += `<span>X = ${X}</span>`
 }

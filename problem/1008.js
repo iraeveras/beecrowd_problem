@@ -25,8 +25,10 @@ No caso do salário, também deve haver um espaço em branco após o $.
 
 */
 
-export function problem (lines) {
+export function problem(lines) {
     const [funcionario, horasTrabalhadas, salarioHora] = lines.map(Number);
     const salario = horasTrabalhadas * salarioHora;
-    console.log(`NUMBER = ${funcionario}\nSALARY = U$ ${salario.toFixed(2)}`);    
+    console.log(`NUMBER = ${funcionario}\nSALARY = U$ ${salario.toFixed(2)}`);
+
+    document.querySelector(".input-resp").innerHTML += `<span>NUMBER = ${funcionario}</span><span>SALARY = U$ ${salario.toFixed(2)}</span><hr>`
 }

@@ -27,5 +27,7 @@ Imprima a mensagem DIFERENCA com todas as letras maiúsculas, conforme exemplo a
 export function problem(lines) {
     const [valorA, valorB, valorC, valorD] = lines;
     const diferenca = (valorA * valorB) - (valorC * valorD);
-    console.log(`DIFERENCA = ${diferenca}`);    
+    console.log(`DIFERENCA = ${diferenca}`);
+
+    document.querySelector(".input-resp").innerHTML += `<span>DIFERENCA = ${diferenca}</span>`
 }

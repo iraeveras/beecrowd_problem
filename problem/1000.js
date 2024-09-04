@@ -8,6 +8,7 @@ Este problema não possui nenhuma entrada.
 Saída
 Você deve imprimir a mensagem "Hello World!" e em seguida o final de linha, conforme o exemplo abaixo.
 */
-export function problem (input) {
-    console.log('Hello World');    
+export function problem(input) {
+    console.log('Hello World');
+    document.querySelector(".input-resp").innerHTML += `<span>Hello World</span>`
 }

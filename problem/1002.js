@@ -18,11 +18,12 @@ caso contrário, você receberá "Presentation Error".
     150.00             |  A=70685.7750
 
 */
-export function problem (lines) {
+export function problem(lines) {
     const n = 3.14159;
     const raio = lines[0];
 
-    const area = n * (parseFloat(raio)**2);
+    const area = n * (parseFloat(raio) ** 2);
 
     console.log(`A=${area.toFixed(4)}`);
+    document.querySelector(".input-resp").innerHTML += `<span>A=${area.toFixed(4)}</span>`
 }

@@ -24,12 +24,12 @@ Imprima o total que o funcionário deverá receber, conforme exemplo fornecido.
 
 */
 
-export function problem (lines) {
+export function problem(lines) {
     const [nome, salario, vendas] = lines.map(Number);
     const percentual = 0.15;
 
     const comissao = vendas * percentual;
     const totalSalario = salario + comissao;
     console.log(`TOTAL = R$ ${totalSalario.toFixed(2)}`);
-    
+    document.querySelector(".input-resp").innerHTML += `<span>TOTAL = R$ ${totalSalario.toFixed(2)}</span><hr>`;
 }
