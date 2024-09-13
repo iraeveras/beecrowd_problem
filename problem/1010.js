@@ -19,6 +19,12 @@ A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo, lembrando
 
 */
 
-export function problem (lines) {
-    const [codigoPeca_1, numero, valorUnitario] = lines;
+export function problem(lines) {
+    const [codPeca_1, qtdPeca_1, vlrPeca_1] = lines[0].split(' ');
+    const [codPeca_2, qtdPeca_2, vlrPeca_2] = lines[1].split(' ');
+
+    const valorPago = (qtdPeca_1 * vlrPeca_1) + (qtdPeca_2 * vlrPeca_2)
+
+    console.log(`VALOR A PAGAR: R$ ${valorPago.toFixed(2)}`);
+
 }
