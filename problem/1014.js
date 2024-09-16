@@ -1,5 +1,6 @@
 /*
-Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) e o total de combustível gasto (em litros).
+Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) 
+e o total de combustível gasto (em litros).
 
 Entrada
 O arquivo de entrada contém dois valores: um valor inteiro X representando a distância total percorrida (em Km), 
@@ -20,8 +21,27 @@ EXEMPLO DE ENTRADA | EXEMPLO DE SAIDA
 
 */
 
-export function problem (lines) {
+export function problem(lines) {
+
+    // SOLUÇÃO TRADICIONAL - OPÇÃO 01
+    /*
     const valores = lines.map(Number)
-    console.log(valores);
-    
+    const [X, Y] = valores
+    const consumo = X / Y
+    console.log(`${consumo.toFixed(3)} km/l`);
+    */
+
+    // SOLUÇÃO TRADICIONAL - OPÇÃO 02
+    /*
+    const distancia = lines[0]
+    const combustivel = lines[1]
+    const consumo = distancia / combustivel
+    console.log(`${consumo.toFixed(3)} km/l`);
+    */
+    // SOLUÇÃO MAIS AVANÇADA - OPÇÃO 03
+    const consumoMedio = (distancia, combustivel) => distancia / combustivel;
+    const consumo = consumoMedio(...lines);
+    console.log(`${consumo.toFixed(3)} km/l`);
+
+    document.querySelector(".input-resp").innerHTML += `<span>${consumo.toFixed(3)} km/l</span><hr>`;
 }
