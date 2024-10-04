@@ -39,9 +39,9 @@ export function problem(lines) {
     console.log(`${consumo.toFixed(3)} km/l`);
     */
     // SOLUÇÃO MAIS AVANÇADA - OPÇÃO 03
-    const consumoMedio = (distancia, combustivel) => distancia / combustivel;
-    const consumo = consumoMedio(...lines);
-    console.log(`${consumo.toFixed(3)} km/l`);
+    const consumo = (distancia, combustivel) => distancia / combustivel;
+    const consumoMedio = consumo(...lines);
+    console.log(`${consumoMedio.toFixed(3)} km/l`);
 
-    document.querySelector(".input-resp").innerHTML += `<span>${consumo.toFixed(3)} km/l</span><hr>`;
+    document.querySelector(".input-resp").innerHTML += `<span>${consumoMedio.toFixed(3)} km/l</span><hr>`;
 }
