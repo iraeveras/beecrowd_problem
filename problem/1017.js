@@ -19,3 +19,7 @@ EXEMPLO DE ENTRADA | EXEMPLO DE SAIDA
 22
 67                 |  122.833
 */
+
+export function problem(lines) {
+    
+}
